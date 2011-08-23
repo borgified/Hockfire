@@ -1,0 +1,146 @@
+<?xml version="1.0" ?>
+
+<keymap
+xmlns="http://www.quantusgame.org"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="keymap.xsd">
+	<branch name="general">
+		<mapping>
+			<input>space</input>
+			<control>mouse_toggle</control>
+		</mapping>
+		<mapping>
+			<input>g</input>
+			<control>god_mode</control>
+		</mapping>
+		<mapping>
+			<input>p</input>
+			<control>per_pixel_lighting</control>
+		</mapping>
+		<mapping>
+			<input>escape</input>
+			<control>menu</control>
+		</mapping>
+		<mapping>
+			<input>w</input>
+			<control>move_forward-on</control>
+		</mapping>
+		<mapping>
+			<input>w-up</input>
+			<control>move_forward-off</control>
+		</mapping>
+		
+		<mapping>
+			<input>s</input>
+			<control>move_backward-on</control>
+		</mapping>
+		<mapping>
+			<input>s-up</input>
+			<control>move_backward-off</control>
+		</mapping>
+		
+		<mapping>
+			<input>a</input>
+			<control>move_left-on</control>
+		</mapping>
+		<mapping>
+			<input>a-up</input>
+			<control>move_left-off</control>
+		</mapping>
+		
+		<mapping>
+			<input>d</input>
+			<control>move_right-on</control>
+		</mapping>
+		<mapping>
+			<input>d-up</input>
+			<control>move_right-off</control>
+		</mapping>
+		
+		<branch name="god_mode">
+			<mapping>
+				<input>tab</input>
+				<control>switch_cam_mode</control>
+			</mapping>
+			<mapping>
+				<input>wheel_up</input>
+				<control>speed_up</control>
+			</mapping>
+			<mapping>
+				<input>wheel_down</input>
+				<control>speed_down</control>
+			</mapping>
+			<mapping>
+				<input>j</input>
+				<control>switch_sector</control>
+			</mapping>
+			<mapping>
+				<input>r</input>
+				<control>move_up-on</control>
+			</mapping>
+			<mapping>
+				<input>r-up</input>
+				<control>move_up-off</control>
+			</mapping>
+			<mapping>
+				<input>f</input>
+				<control>move_down-on</control>
+			</mapping>
+			<mapping>
+				<input>f-up</input>
+				<control>move_down-off</control>
+			</mapping>
+		</branch>
+		
+		<branch name="unit">
+			<mapping>
+				<input>mouse1</input>
+				<control>primary_fire-on</control>
+			</mapping>
+			<mapping>
+				<input>mouse1-up</input>
+				<control>primary_fire-off</control>
+			</mapping>
+			<mapping>
+				<input>mouse3</input>
+				<control>secondary_fire-on</control>
+			</mapping>
+			<mapping>
+				<input>mouse3-up</input>
+				<control>secondary_fire-off</control>
+			</mapping>
+			
+			<branch name="infantry">
+				
+			</branch>
+			<branch name="vehicle">
+				<branch name="aircraft">
+					<mapping>
+						<input>r</input>
+						<control>move_up-on</control>
+					</mapping>
+					<mapping>
+						<input>r-up</input>
+						<control>move_up-off</control>
+					</mapping>
+					<mapping>
+						<input>f</input>
+						<control>move_down-on</control>
+					</mapping>
+					<mapping>
+						<input>f-up</input>
+						<control>move_down-off</control>
+					</mapping>
+				</branch>
+				<branch name="hover">
+					<branch name="tank">
+						
+					</branch>
+				</branch>
+			</branch>
+		</branch>
+		<branch name="map">
+			
+		</branch>
+	</branch>
+</keymap>

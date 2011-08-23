@@ -1,0 +1,14 @@
+<h2>
+	This site is still under development.
+</h2>
+<h3>
+	Welcome to Quantus.
+</h3>
+<p>
+	Quantus is a heavily teambased, tactical multiplayer shooter. 
+	It incorporates elements from rts and fps genres to create a game in which you must work closely with your teammates, 
+	performing diverse roles under the orders of your commander, who is another player. 
+</p>
+<p>
+	Quantus is still currently in early develpoment, and no runnable version of the game yet exists.
+</p>

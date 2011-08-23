@@ -1,0 +1,10 @@
+<!ELEMENT keymap (branch)>
+<!ELEMENT branch (branch|mapping)*>
+<!ELEMENT mapping (input,control)>
+<!ELEMENT input ((modifier*,key,event?)|PCDATA)>
+<!ELEMENT modifier (PCDATA)>
+<!ELEMENT key (PCDATA)>
+<!ELEMENT event (PCDATA)>
+<!ELEMENT control (PCDATA)>
+
+<!ATTLIST branch name CDATA #REQUIRED>

@@ -1,0 +1,12 @@
+I always make some form of concept art first before modeling the models, and i will ocasionally dump it in here from time to time.
+
+06/01/09:
+ - Here's a nice drawing of the BIOS capships. I won't model them for now (and probably only when we need BIOS) so I guess I'l leave it here so it's in another place than in one of my notebooks.
+
+28/01/09:
+- Gigacorp lady concept art (just a small prototipe);
+- IC basic hovering physics;
+- IC Capships;
+
+03/02/09:
+ - A big building complex (may be map?) of a natural Quantus city. (It is pictured as it would be before being attacked by the Rasadan period, and it could just stay intact, as  a city that managed to escape relatively unharmed, or it could be applied some damage, mainly to the town center).

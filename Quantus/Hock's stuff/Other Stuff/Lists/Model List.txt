@@ -1,0 +1,477 @@
+-Model Artwork:
+
+	-Base Models:
+
+		-Gigacorp:
+
+			-Teleport
+				-Teleport Outside Mesh
+				-Teleport Inside Mesh
+				-Teleport Texture
+
+			-Garrison
+				-Garrsion Outside Mesh
+				-Garrison Inside Mesh
+				-Garrison Texture	
+	
+			-Expansion
+				-Expansion Outside Mesh
+				-Expansion Inside Mesh
+				-Expansion Texture	
+
+			-Tactical
+				-Tactical Outside Mesh
+				-Tactical Inside Mesh
+				-Tactical Texture	
+
+			-Supermacy
+				-Supermacy Outside Mesh
+				-Supermacy Inside Mesh
+				-Supermacy Texture	
+
+			-Shipyard
+				-Shipyard Outside Mesh
+				-Shipyard Inside Mesh
+				-Shipyard Texture	
+
+			-Outpost
+				-Outpost Outside Mesh
+				-Outpost Inside Mesh
+				-Outpost Texture	
+
+			-Refinery
+				-Refinery Outside Mesh
+				-Refinery Inside Mesh
+				-TRefinery Texture	
+
+			-Spec. Refinery
+				-Spec. Refinery Outside Mesh
+				-Spec. Refinery Inside Mesh
+				-Spec. refinery Texture	
+
+		-Iron Coalition:
+
+			
+			-Teleport
+				-Teleport Outside Mesh
+				-Teleport Inside Mesh
+				-Teleport Texture
+
+			-Garrison
+				-Garrsion Outside Mesh
+				-Garrison Inside Mesh
+				-Garrison Texture	
+	
+			-Expansion
+				-Expansion Outside Mesh
+				-Expansion Inside Mesh
+				-Expansion Texture	
+
+			-Tactical
+				-Tactical Outside Mesh
+				-Tactical Inside Mesh
+				-Tactical Texture	
+
+			-Supermacy
+				-Supermacy Outside Mesh
+				-Supermacy Inside Mesh
+				-Supermacy Texture	
+
+			-Shipyard
+				-Shipyard Outside Mesh
+				-Shipyard Inside Mesh
+				-Shipyard Texture	
+
+			-Outpost
+				-Outpost Outside Mesh
+				-Outpost Inside Mesh
+				-Outpost Texture	
+	
+	-Weapon Models: 
+
+		-Gigacorp:
+
+			-Assault Rifle
+				-Assault Rifle Outside Model
+				-Assault Rifle Texture
+
+			-Heavy Machine-gun
+				-Heavy MG Outside Model
+				-Heavy MG Texture
+
+			-Sniper Rifle
+				-Sniper Rifle Outside Model
+				-Sniper Rifle Texturei
+
+			-Anti-Tank Gun
+				-Anti-Tank Gun Outside Model
+				-Anti-Tank Gun Texture
+
+			-Flamethrower
+				-Flamethrower Outside Model
+				-Flamethrower Texture
+
+			-Grenade
+				-Grenade Outside Model
+				-Grenade Texture
+			
+			-Grenade Launcher
+				-Grenade Launcher Outside Model
+				-Grenade Launcher Texture
+
+		-Iron Coalition:
+
+			-Assault Rifle
+				-Assault Rifle Outside Model
+				-Assault Rifle Texture
+
+			-Heavy Machine-gun
+				-Heavy MG Outside Model
+				-Heavy MG Texture
+
+			-Sniper Rifle
+				-Sniper Rifle Outside Model
+				-Sniper Rifle Texture
+
+			-Anti-Tank Gun
+				-Anti-Tank Gun Outside Model
+				-Anti-Tank Gun Texture
+
+			-Flamethrower
+				-Flamethrower Outside Model
+				-Flamethrower Texture
+
+			-Grenade
+				-Grenade Outside Model
+				-Grenade Texture
+
+	-Vehicle Models:
+
+		-Gigacorp:
+
+			-Ground:
+	
+				-Basic Infantry
+					-Human Outside Model [Female]
+					-Human Outside Model [Male]
+					-Human Texture [Female]
+					-Human Texture [Male]
+				-Scout
+					-Scout Outside Model
+					-Scout Texture
+
+				-Troop Transport
+					-TT Outside Model
+					-TT Inside Texture
+					-TT Texture
+				
+				-Tank
+					-Tank Outside Model
+					-Tank Texture
+			
+				-Stealth Fighter
+					-Stealth F. Outside Model
+					-Stealth F. Texture
+
+				-Combat Mesh 
+					-Combat Mesh Outside Model
+					-Combat Mesh Texture
+
+				-Devastator
+					-Devastator Outside Model
+					-Devastator Inside Model
+					-Devastator Texture
+
+				-Destroyer
+					-Destroyer Outside Model
+					-Destroyer Inside Model
+					-Destroyer Texture
+				
+				Assault Ship
+					-Assault Ship Outside Model
+					-Assault Ship Inside Model
+					-Assault Ship Texture
+
+			-Air:
+				-Dropship
+					-Dropship Outside Model
+					-Dropship Inside Model
+					-Dropship Texture
+
+				-Interceptor
+					-Interceptor Outside Model
+					-Interceptor Texture
+				
+				-Cruiser
+					-Cruiser Outside Model
+					-Cruiser Inside Model
+					-Cruiser Texture
+
+				-Carrier
+					-Carrier Outside Model
+					-Carrier Inside Model
+					-Carrier Texture
+
+		-Iron Coalition:
+
+			-Ground:
+	
+				-Basic Infantry
+					-Human Outside Model [Female]
+					-Human Outside Model [Male]
+					-Human Texture [Female]
+					-Human Texture [Male]
+				-Scout
+					-Scout Outside Model
+					-Scout Texture
+
+				-Troop Transport
+					-TT Outside Model
+					-TT Inside Texture
+					-TT Texture
+				
+				-Tank
+					-Tank Outside Model
+					-Tank Texture
+			
+				-Stealth Fighter
+					-Stealth F. Outside Model
+					-Stealth F. Texture
+
+				-Combat Mesh 
+					-Combat Mesh Outside Model
+					-Combat Mesh Texture
+
+				-Devastator
+					-Devastator Outside Model
+					-Devastator Inside Model
+					-Devastator Texture
+
+				-Destroyer
+					-Destroyer Outside Model
+					-Destroyer Inside Model
+					-Destroyer Texture
+				
+				Assault Ship
+					-Assault Ship Outside Model
+					-Assault Ship Inside Model
+					-Assault Ship Texture
+
+			-Air:
+				-Dropship
+					-Dropship Outside Model
+					-Dropship Inside Model
+					-Dropship Texture
+
+				-Interceptor
+					-Interceptor Outside Model
+					-Interceptor Texture
+				
+				-Cruiser
+					-Cruiser Outside Model
+					-Cruiser Inside Model
+					-Cruiser Texture
+
+				-Carrier
+					-Carrier Outside Model
+					-Carrier Inside Model
+					-Carrier Texture
+			
+	Debris Models:
+			-Trees	
+				-Tree Outside Model 1	
+				-Tree Outside Model 2
+				-Tree Outside Model 3
+				-Tree Outside Model 4
+				-Tree Texture 1
+				-Tree Texture 2
+				-Tree Texture 3
+				-Tree Texture 4
+
+			-Rocks
+				-Rock Outside Model 1
+				-Rock Outside Model 2
+				-Rock Outside Model 3
+				-Rock Outside Model 4
+				-Rock Outside Model 5
+				-Rock Outside Model 6
+				-Rock Texture 1
+				-Rock Texture 2
+ 				-Rock Texture 3
+				-Rock Texture 4
+				-Rock Texture 5
+				-Rock Texture 6
+
+			-Boulders
+				-Boulder Outside Model 1
+				-Boulder Outside Model 2
+				-Boulder Outside Model 3
+				-Boulder Outside Model 4
+				-Boulder Outside Model 5
+				-Boulder Outside Model 6
+				-Boulder Texture 1
+				-Boulder Texture 2
+ 				-Boulder Texture 3
+				-Boulder Texture 4
+				-Boulder Texture 5
+				-Boulder Texture 6
+
+			-Hills
+				-Hill Outside Model 1
+				-Hill Outside Model 2
+				-Hill Outside Model 3
+				-Hill Outside Model 4
+				-Hill Outside Model 5
+				-Hill Outside Model 6
+				-Hill Outside Model 7
+				-Hill Outside Model 8
+				-Hill Outside Model 9
+				-Hill Outside Model 10
+				-Hill Texture 1
+				-Hill Texture 2
+ 				-Hill Texture 3
+				-Hill Texture 4
+				-Hill Texture 5
+				-Hill Texture 6
+				-Hill Texture 7
+				-Hill Texture 8
+				-Hill Texture 9
+				-Hill Texture 10
+
+			-Space Debris
+				-S.P. Outside Model 1
+				-S.P. Outside Model 2
+				-S.P. Outside Model 3
+				-S.P. Outside Model 4
+				-S.P. Outside Model 5
+				-S.P. Outside Model 6
+				-S.P. Texture 1
+				-S.P. Texture 2
+ 				-S.P. Texture 3
+				-S.P. Texture 4
+				-S.P. Texture 5
+				-S.P. Texture 6
+
+			-Grass
+				-Grass Outside Model 1
+				-Grass Outside Model 2
+				-Grass Outside Model 3
+				-Grass Outside Model 4
+				-Grass Outside Model 5
+				-Grass Outside Model 6
+				-Grass Texture 1
+				-Grass Texture 2
+ 				-Grass Texture 4
+				-Grass Texture 5
+				-Grass Texture 6
+
+	-Military [Miscelaneous] Models
+
+				-Ground Mines
+					-Ground Mine Outside Model
+					-Ground Mine Texture
+
+				-Air Mines
+					-Air Mine Outside Model
+					-Air Mine Texture
+
+				-Bouncing Mines
+					-Bouncing Mine Outside Model
+					-Bouncing Mine Texture
+
+				-Missiles
+					-Missile Outside Model 1
+					-Missile Outside Model 2
+					-Missile Outside Model 3
+					-Missile Outside Model 4
+					-Missile Outside Model 5
+					-Missile Outside Model 6
+					-Missile Outside Model 7
+					-Missile Outside Model 8
+					-Missile Outside Model 9
+					-Missile Outside Model 10
+					-Missile Outside Model 11				
+					-Missile Outside Model 12
+					-Missile Outside Model 13
+					-Missile Outside Model 14
+					-Missile Texture 1
+					-Missile Texture 2
+					-Missile Texture 3
+					-Missile Texture 4
+					-Missile Texture 5
+					-Missile Texture 6
+					-Missile Texture 7
+					-Missile Texture 8
+					-Missile Texture 9
+					-Missile Texture 10
+					-Missile Texture 11
+					-Missile Texture 12
+					-Missile Texture 13
+ 					-Missile Texture 14
+
+				-Shields
+					-Shield Outside Model 1
+					-Shield Outside Model 2
+					-Shield Outside Model 3
+					-Shield Texture 1
+					-Shield Texture 2
+					-Shield Texture 3
+
+				-Cloaks
+					-Cloak Outside Model 1
+					-Cloak Outside Model 2
+					-Cloak Outside Model 3
+					-Cloak Texture 1
+					-Cloak Texture 2
+					-Cloak Texture 3
+
+				-Probes
+					-Probe Outside Model 1
+					-Probe Outside Model 2
+					-Probe Outside Model 3
+					-Probe Outside Model 4
+					-Probe Outside Model 5
+					-Probe Outside Model 6
+					-Probe Texture 1
+					-Probe Texture 2
+					-Probe Texture 3
+					-Probe Texture 4
+					-Probe Texture 5
+					-Probe Texture 6
+
+				-Boosters
+					-Booster Outside Model 1
+					-Booster Outside Model 2
+					-Booster Outside Model 3
+					-Booster Outside Model 4
+					-Booster Textures 1
+					-Booster Textures 2
+					-Booster Textures 3
+					-Booster Textures 4 
+
+				-Ammo
+					-Ammo Outside Model 1
+					-Ammo Outside Model 2
+					-Ammo Outside Model 3
+					-Ammo Outside Model 4
+					-Ammo Outside Model 5
+					-Ammo Outside Model 6
+					-Ammo Outside Model 7
+					-Ammo Texture 1
+					-Ammo Texture 2
+					-Ammo Texture 3
+					-Ammo Texture 4
+					-Ammo Texture 5
+					-Ammo Texture 6
+
+
+ 
+
+
+g
+
+			
+
+
+
+		

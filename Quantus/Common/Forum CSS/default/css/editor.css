@@ -1,0 +1,30 @@
+/* This is the IFRAME that holds the editor. */
+.rich_editor_frame
+{
+	border: 1px solid #808080;
+}
+
+/* This is the WYSIWYG editor */
+.rich_editor
+{
+	background-color: white;
+	color: black;
+	font-family: verdana;
+	font-size: small;
+	border: none;
+}
+
+.rich_editor p
+{
+	margin: 0px;
+}
+
+.richedit_resize
+{
+	height: 5px;
+	font-size: 0px;
+	background: #eeeeee url(../images/bbc/resize-handle.gif) no-repeat 50% 1px;
+	border: 1px solid #dddddd;
+	border-top-width: 0px;
+	cursor: s-resize;
+}

@@ -1,0 +1,318 @@
+--> You are now talking on #Quantus
+<fuh-zz> third, your players
+<fuh-zz> oh good timing scratch let me start over
+<-- TheSambasti-AFK has quit (Ping timeout)
+<fuh-zz> samb was just telling me about predictibility
+ <fuh-zz> hmm
+ <fuh-zz> well first let's talk about what makes Allegiance predictable
+ 1)  The more static your environment is, the more predictable things are
+<scratch> yup
+<fuh-zz> 2)  The more you know your available technology and the enemies technology, the more predictable
+ and lastly 3)  your players
+ your idea changes #2
+ but i think we can go a bit further, and this applies to #1 as well
+ what if we could come up with unique randomness to each of those elements?
+ for example, perhaps your supply chain has been cut off over the planet!
+ allegiance does have a few random elements
+ it has random spawning technology (to a point) and also random aleph placement and asteroids
+ But, what I'm basically saying is, the more random the game is, the less predictable it is.
+<scratch> most of our map generation can be done by the computer, so you could have literally random maps, even sectors etc.
+<fuh-zz> yes that is a great approach i believe we were already thinking about
+ i don't know if you were in the conversation or not, but I was talking with someone about getting rid of sectors/alephs and replacing them with random chokepoints
+ because when you think about it, we're not in space anymore
+--> TheSambasti-AFK (~sambasti@c-98-234-170-95.hsd1.ca.comcast.net) has joined #Quantus
+<TheSambasti-AFK> k
+ sorry
+ was gone for a sec
+ alleg
+<fuh-zz> grrrrrr
+<TheSambasti-AFK> why is it predictable
+ well
+ :/
+<fuh-zz> let me pastebint he convo
+ lol
+<TheSambasti-AFK> noooooooo!!!
+ I missed something!!!!
+--- TheSambasti-AFK is now known as TheSambasti
+<scratch> heh
+<fuh-zz> http://alleg.pastebin.com/K5aMWcNC
+<scratch> fuzz, i always rather liked sectors
+ and a big advantage is we dont have to render beyond them
+<TheSambasti> :P
+<fuh-zz> well we can still keep sectors, but do alephs really make sense?
+<TheSambasti> we are not in space anymore!
+<scratch> which means bigger maps
+<TheSambasti> k
+ about randomization
+ we need to be careful
+ about making things to random
+ because if we go to far
+<scratch> hmm, i think samb just pointed out our new tag line
+<TheSambasti> you cant even make strats anymore
+ so random map with random chokes at the start = yes
+<fuh-zz> yes i alread had it scratch :P
+<scratch> well done fuzz, samb, im putting that on the website
+<TheSambasti> but total random crap
+ in the middle of the game
+ that makes previous stuff
+ you set up at the start of the match = no
+ thats just being mean :P
+<fuh-zz> well samb you still have all sorts of random elements
+<TheSambasti> Im pretty sure fuzz had that tagline
+ as the topic of our chat
+ a while back
+ what i mean is
+ stuff
+<fuh-zz> for example do you have a forest next to the enemy base or a cliff?
+<TheSambasti> that effects the setting of the game
+ like what you just said
+ is good
+ however
+ having a volcano
+ randomly spawn in the middle of the match
+ ruining your carefully set mining operation
+ is bad
+ also
+<fuh-zz> no i'm not talking about random events
+<TheSambasti> the varying terrain
+ would mean
+ that you have to plan your bse
+ *base
+ decide where to move it
+ ect
+ or at least
+ <fuh-zz> you WANT varying terrain, right?
+<TheSambasti> `1`1`1`1
+<fuh-zz> alright, so we already had a few ideas about this in the first place
+ to clarify my point of view
+ i also want to avoid random things that can completely fuck you over
+<TheSambasti> good
+ fucking people over takes out the fun
+<fuh-zz> i know
+<TheSambasti> anyway
+ on players
+ the #3 thing
+<fuh-zz> there's a thin line, and the line is between "Awww I got fucked" and "THIS GAME SUCKS"
+<TheSambasti> random newbies change the game
+<fuh-zz> yep i agree
+<TheSambasti> lots of other stuff players do
+ right now
+<fuh-zz> there's not much we can do about #3 though
+<TheSambasti> what makes alleg annoying
+ is that people are clueless
+ we need better tuts
+ and we need a system
+ where people understand
+ that people cant just go in
+ shoot at stuff
+ and go lolzor I hit a guy
+ I dont care my base died
+ how exactly we can do this
+ is open
+ to question
+ cdt
+ is good
+ but it doesn't catch enough people
+ I would consider integrating
+ something like TS into the game
+ but I am not sure how feasable that is
+<scratch> that is huge tho
+ possible maybe
+ i dont know
+ brb
+<TheSambasti> Basically]
+ I want to drag the standard game
+ more into the direction of alleg sg
+ or a squad stack
+ I personally think
+ alleg squad stacks
+ are so awesome
+ not because everyone knows everyone else
+ but because people automatically adopt
+ more of a team mentality
+ and rely on each other
+ communicate more
+ its a culture thing
+ brb
+ afk for 5
+ thoughts?
+<fuh-zz> well samb, that's not my department :P
+<scratch> thinking isnt your department? :p
+<fuh-zz> lol
+ ok you win
+ the problem with people is
+ there are many out there who don't have the motive for teamplay
+--- fuh-zz gives channel operator status to TheSambasti
+ fuh-zz gives channel operator status to scratch
+ fuh-zz gives voice to grv_
+<scratch> and we need to auto detect such people and ban them!
+<fuh-zz> has grv_ ever talked in here?
+<scratch> once,
+ it was a tuesday
+<fuh-zz> i wonder if he reads all this
+ we could actually use a commander's point of view
+<scratch> yeah
+ an important issue when we work on this is:
+ how important should the team vs commander be?
+ this is something i brought up in the original discussion with samb
+<-- TheSambasti has quit (Ping timeout)
+<fuh-zz> team vs commander?
+ i never realized they fought each other
+--> TheSambasti (~sambasti@c-98-234-170-95.hsd1.ca.comcast.net) has joined #Quantus
+<TheSambasti> <@fuh-zz> we could actually use a commander's point of view
+ I command
+ and people are retards
+ pretty much sums it up
+<fuh-zz> you may be a commander, but your not grav!
+<scratch> fuzz: should a good comm be able to win the game with a team of noobs against an average comm?
+<TheSambasti> `1
+ actually
+ noobs are more helpful than voobs
+ any com will tell you that
+ because noobs are like puddy
+ you can shape them to do awesome things
+<fuh-zz> it should be almost half/half scratch
+<TheSambasti> you just need to instruct them
+--- fuh-zz gives channel operator status to TheSambasti
+ TheSambasti has changed the topic to: We're not in space anymore!
+<TheSambasti> so yes
+ it should be possible
+ however
+ it depends on how you define noob, good comm, and average comm
+ I think
+ the worst thing is
+ that people dont listen to the comm
+ esp if they are average
+ another effect of the squad stack
+<scratch> allright, should spidey be able to win with a pickup team vs a squad?
+<TheSambasti> no
+ he wont
+ not in alle
+ and he shouldn't in quantus
+ like I said
+ squad stack
+ automatically doubles every players skill
+ and the main thing
+ that seperates a good com from a bad one (motivating team)
+ is no longer a problem
+<scratch> mm, well said
+<TheSambasti> the big thing is
+ culture
+ the players
+ need to be motivated
+ to play as a team
+ that
+ will automatically
+ make you win any PUG in alleg
+ some of my fondest memories
+ are of teams
+ that would get it done
+ without me having to micro everything
+ and it wasn't because they could dogfight
+ or sb
+ or were somehow incredibly skilled
+ it was just that when I said d high
+ they defended high
+ and when I said galv
+<fuh-zz> alright samb well
+<TheSambasti> they would get together
+ except for the one guy who new he should probe
+<fuh-zz> how do we do that?
+* TheSambasti sighs
+<TheSambasti> thats the problem
+ I dont know how
+ <@TheSambasti> the big thing is
+ <@TheSambasti> culture
+ first off
+ forum account
+ should be tied to game account
+<scratch> a task menu could improve things a little, but not that much,
+<TheSambasti> no players that arent on forums
+ then
+ better tutorials
+<scratch> yes, agree with forum/game
+ link
+<TheSambasti> stressing that without teamwork
+ you will fail
+<fuh-zz> like i said to scratch before
+<fuh-zz> some people just don't give a shit about their team
+<TheSambasti> exactly
+ somehow
+ we weed those out
+<fuh-zz> and those are the kind of people who can't be convinced
+<TheSambasti> not necessairly banning
+ but giving them a reason
+ to give a shit aobut their team
+ like cash penalty
+ or a label like team hater
+<fuh-zz> a lot of that is the COMMANDER's decision
+ there are just some people we don't want around here, we can't be too noob friendly
+ unlike what popular carebears will say
+<TheSambasti> I am personally all carebear
+ but I think
+ there is a differrence
+ between the guy
+ who messed up naning the miner
+ and the guy
+ who was chasing the scout 5 sectors away
+ IMO we boot the wrong people around here
+<scratch> between harold3(0) and newguy(0)
+<fuh-zz> it's the comm's decision, doesn't bother me
+<TheSambasti> except
+ anti newbie culture
+ kills games
+ man this is difficult...
+<fuh-zz> i don't believe there's an anti newb culture
+ this is like
+ the difference between do you spank your children or not?
+<scratch> i think there would be without the serious rules and heavy ban hammer we get in alleg
+<TheSambasti> lol
+<scratch> and some argue we have it anyway (though ive never seen it)
+<fuh-zz> personally i don't think we should worry about it unless it's something we implement into gameplay
+ not yet anyway
+<TheSambasti> well
+ this goes along the line
+ of how do we make people
+ play as a team
+<fuh-zz> commander boots people who don't participate in the team
+ we can even recommend it to comms
+ warn players
+<TheSambasti> here is the thing I have seen in alleg
+ and that makes this difficult
+<fuh-zz> that way it depends on both the player AND the comm
+<TheSambasti> what exactly is boot worthy
+ if 1 person
+ defends the miner
+<scratch> an effective solution might be to give the comm more easily accessible intel on what people are doing
+<TheSambasti> that we knew was going to be attacked
+ who gets booted
+ the prober in their home?
+ those 2 guys chasing their con?
+ were they doing something productive?
+<fuh-zz> someone who was being useless....
+<TheSambasti> what if no one was...
+<fuh-zz> there's a difference between trying to be useful and not
+ then i guess the commander boot resigns :P
+<scratch> everyone defines useless differently,
+<TheSambasti> bingo
+<scratch> but maybe we can have less issue with that, if we get enough players for multiple games
+<TheSambasti> that is our dilemma
+ hopefully
+ anyway
+ this is pointless
+<fuh-zz> like i keep saying, it's the commander's decision
+<TheSambasti> until the game is out
+<fuh-zz> <scratch> an effective solution might be to give the comm more easily accessible intel on what people are doing
+<fuh-zz> that could help
+<TheSambasti> right now
+ the only thing
+ we should be discussing
+ is gameplay
+ and how it will work out
+ with teamwork
+<fuh-zz> that's why i mentioned what scratch just said
+<fuh-zz> anyway
+ are any of us writing this down?
+<scratch> im prolly going quiet for a bit, ill be around though, if you need me, say my name
+<TheSambasti> I g2g
+ see you all later

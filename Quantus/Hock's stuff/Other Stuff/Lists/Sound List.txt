@@ -1,0 +1,289 @@
+Hey, hey! Another small list of tasks! Lets follow the tradition
+
+WARNING: If you, by any chance, put here copyrighted sounds, please check if you have permissions. This is a friendly warning. Failure to do so will almost surely result in a swift kick in the ass. Again: This is a friendly warning!
+
+
+1' Plan stuff that needs to be done
+1' Plan stuff that is complete
+-----------------//-----------------
+2' Plan stuff that needs to be done
+2' Plan stuff that is complete
+
+
+-Sounds:
+
+-Base Sounds:
+
+
+-Base Outside Sound
+-Base Secondary Outside Sound
+-Base Inside Sound 
+-Base Secondary Inside Sound
+-Base Elevator up Sound
+-Base Elevator down Sound
+-Base Construction sound
+-Base Secondary construction Sound
+-Base Hit Sound
+-Base Secondary Hit Sound
+-Base Detsruction Sound
+-Base Secondary destruction Sound
+
+-Weapon Sound:
+
+-Assault Rifle
+-Assault Rifle Reload Sound
+-Assault Rifle Shot Sound
+-Assault Rifle Secondary Shot Sound
+-Assault Rifle Carry Sound
+
+-Heavy Machine-gun
+-Heavy MG Reload Sound
+-Heavy MG Shot Sound
+-Heavy MG Secondary Shot Sound
+-Heavy MG Carry Sound
+
+-Sniper Rifle
+-Sniper Rifle Reload Sound
+-Sniper Rifle Shot Sound
+-Sniper Rifle Secondary Shot Sound
+-Sniper Rifle Carry Sound
+
+-Anti-Tank Gun
+-Anti-Tank Gun Reload Sound
+-Anti-Tank Gun Shot Sound
+-Anti-Tank Gun Secondary Shot Sound
+-Anti-Tank Gun Carry Sound
+
+-Anti-Tank Launcher
+-Anti-Tank Launcher Reload Sound
+-Anti-Tank Launcher Shot Sound
+-Anti-Tank Launcher Secondary Shot Sound 
+-Anti-Tank Launcher Carry Sound
+
+-Flamethrower
+-Flamethrower Reload Sound
+-Flamethrower Shot Sound
+-Flamethrower Secondary Shot Sound
+-Flamethrower Carry Shot Sound
+
+-Grenade
+-Grenade Arm Sound
+-Grenade Throw Sound
+-Grenade Blast Sound
+-Grenade Secondary Blast Sound
+-Grenade Carry Sound
+
+-Grenade Launcher
+-Grenade Launcher Reload Sound
+-Grenade Launcher Shot Sound
+-Grenade Launcher Secondary Shot Sound
+-Grenade Launcher Carry Sound
+
+-Vehicle Sounds:
+
+-Ground:
+
+-Basic Infantry
+-Human Female Walk Sound
+-Human Female Run Sound
+-Human Female Hit Sound
+-Human Female Secondary Hit Sound
+-Human Female Balst Sound
+-Human Female Secondary Blast Sound
+-Human Male Walk Sound
+-Human Male Run Sound
+-Human Male Hit Sound
+-Human Male Secondary Hit Sound
+-Human Male Blast Sound
+-Human Male Secondary Blast Sound
+
+-Scout
+-Scout Initial Motor Startup Sound
+-Scout Motor Sound
+-Scout Motor Cooldown Sound
+-Scout Hit Sound
+-Scout Secondary Hit Sound
+
+-Troop Transport
+-TT Initial Motor Startup Sound 
+-TT Motor Sound
+-TT Motor Cooldown Sound
+-TT Hit Sound
+-TT Secondary Hit Sound
+
+-Tank
+-Tank Initial Motor Startup Sound
+-Tank Motor Sound
+-Tank Motor Cooldown Sound
+-Tank Hit Sound
+-Tank Secondary Hit Sound
+-Tank Wheels Sound  
+
+-Stealth Fighter
+-Tank Initial Motor Startup Sound
+-Tank Motor Sound
+-Tank Motor Cooldown Sound
+-Tank Hit Sound
+-Tank Secondary Hit Sound
+
+-Combat Mesh
+-Combat Mesh Walk Sound
+-Combat Mesh Run Sound
+-Combat Mesh Hit Sound
+-Combat Mesh Secondary Hit Sound
+-Combat Mesh Blast Sound
+-Combat mesh Secondary Blast Sound
+
+-Devastator
+-Devastator Initial Motor Startup Sound
+-Devastator Motor Sound
+-Devastator Motor Cooldown Sound
+-Devastator Hit Sound
+-Devastator Secondary Hit Sound
+
+-Destroyer
+-Destroyer Motor Startup Sound
+-Destroyer Sound
+-Destroyer Cooldown Sound
+-Destroyer Hit Sound
+-Destroyer Secondary Hit Sound
+-Destroyer Wheeels Sound
+-Destroyer Turrets Sound
+
+Assault Ship
+-Ass. Ship Initial Motor Startup Sound
+-Ass. Ship Motor Sound
+-Ass. Ship Motor Cooldown Sound
+-Ass. Ship Hit Sound
+-Ass. Ship Secondary Hit Sound
+
+-Air:
+
+-Dropship
+-Dropship Initial Motor Startup Sound
+-Dropship Ship Motor Sound
+-Dropship Motor Cooldown Sound
+-Dropship Hit Sound
+-Dropship Secondary Hit Sound
+
+-Interceptor
+-Interceptor Initial Motor Startup Sound
+-Interceptor Motor Sound
+-Interceptor Motor Cooldown Sound
+-Interceptor Hit Sound
+-Interceptor Secondary Hit Sound
+
+-Cruiser
+-Cruiser Initial Motor Startup Sound
+-Cruiser Motor Sound
+-Cruiser Motor Cooldown Sound
+-Cruiser Hit Sound
+-Cruiser Secondary Hit Sound
+
+-Carrier
+-Carrier Initial Motor Startup Sound
+-Carrier Motor Sound
+-Carrier Motor Cooldown Sound
+-Carrier Hit Sound
+-Carrier Secondary Hit Sound
+
+
+Debris Models:
+-Trees
+-Tree Leaves Prox. Sound
+
+-Grass
+-Grass [High] Sound
+
+-Military [Miscelaneous] Models
+
+-Ground Mines
+-Ground Mine Beep Sound
+-Ground Mine Drop and Hit the Earth Sound
+
+-Air Mines
+-Air Mine Beep Sound
+-Air Mine Drop Sound
+-Air Mine Hit Craft Sound
+
+-Bouncing Mines
+-Bouncing Mine Jump Sound
+-Bouncing Mine Beep Sound
+-Bouncing Mine Drop and hit the Earth Sound
+-Bouncing Mine Blast Sound
+-Bouncing Mine Secondary Blast Sound
+
+-Missiles
+-Missile Launch Sound 
+-Missile Secondary Launch Sound
+-Missile Third Launch Sound
+-Missile Fourth Launch Sound
+-Missile Beep In Sound
+-Missile Incoming Sound
+-Missile Hit Sound
+-Missile Secondary Hit Sound
+-Missile Third Hit Sound
+-Missile Forth Hit Sound
+
+-Shields
+-Shield Hit Sound
+-Shield Secondary Hit Sound
+-Shield Third Hit Sound
+
+-Cloaks
+-Cloak Engage Sound
+-Cloak Second Engage Sound
+-Cloak Third Engage Sound
+-Cloak Disengage Sound
+-Cloak Secondary Disengage Sound
+-Cloak Third Disengage Sound
+
+-Probes
+-Probe Beep Sound
+-Probe Secondary Beep Sound
+-Probe Third Beep Sound
+-Probe Fourth Beep Sound
+-Probe Fifth Beep Sound
+-Probe Sixth Beep Sound
+-Probe Engaging Sound
+-Probe Secondary Engaging Sound
+-Probe Third Engaging Sound
+-Probe Fourth Engaging Sound
+
+-Boosters
+-Booster Sound
+-Booster Secondary Sound
+-Booster Third Sound
+-Booster Fourth Sound
+
+-Miscelaneous Sounds
+
+-Fuel
+-Fuel Mid Sound
+-Fuel Low Sound
+
+-Parts
+-Part Cargo - Hardpoint Sound
+-Part Hardpoiunt - Cargo Sound
+-Parts Drop to Space
+
+-Blasts
+-Blast Small Sound
+-Blast Secondary Small Sound
+-Blast Medium Sound
+-Blast Secondary Medium Sound
+-Blast Big Sound
+-Blast Secondary Big Sound
+-Blast Parts Sound
+
+-VoiceChat
+-VoiceChat Sounds (0)
+
+Enviornement
+-Enviornement Sounds (0)
+-Blast Parts Secondary Sound
+
+Turrets
+-Turret Inside Sound
+-Turret Outside Sound
+

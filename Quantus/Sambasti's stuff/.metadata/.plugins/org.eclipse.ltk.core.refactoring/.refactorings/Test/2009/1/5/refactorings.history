@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Test/src/Perlin/PerlinTestRun&apos; to &apos;PerlinTestRun.py&apos;" description="Rename resource &apos;PerlinTestRun&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Perlin/PerlinTestRun" name="PerlinTestRun.py" stamp="1233134497625" updateReferences="true"/>
+</session>

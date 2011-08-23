@@ -1,0 +1,158 @@
+import random
+import math
+
+
+class Perlin:
+	persistance = 0.5
+	freqseed = 1.0
+	numberOfOctaves = 8
+	smooth = True
+	seed = 0
+		
+	def __init__(self, persistance = 0.5, numberOfOctaves = 8, smooth = True, seed = -1.0):
+		if seed == -1.0:
+			self.seed = random.random()
+		else:
+			self.seed = seed + 1
+		self.persistance = persistance
+		self.numberOfOctaves = numberOfOctaves
+		self.smooth = smooth
+		
+	def noise1D(self, x):
+		total = 0
+		
+		for i in range(0,self.numberOfOctaves - 1):
+			
+			frequency = 2**i
+			self.freqseed = frequency
+			amplitude = self.persistance**i
+			
+			integer_X    = int(x * frequency)
+			fractional_X = (x * frequency) - integer_X
+			
+			if self.smooth == True:
+				v1 = self.smoothedNoise1D(integer_X)
+				v2 = self.smoothedNoise1D(integer_X + 1)
+			else:
+				v1 = self.noiseGen1D(integer_X)
+				v2 = self.noiseGen1D(integer_X + 1)
+			
+			total = total + self.cosineInterpolate(v1 , v2 , fractional_X) * amplitude
+			
+		return total
+	
+	def smoothedNoise1D(self,x):
+		return self.noiseGen1D(x)/2  +  self.noiseGen1D(x-1)/4  +  self.noiseGen1D(x+1)/4
+	
+	def noiseGen1D(self,x):
+		random.seed(self.freqseed * (1 + x) * self.seed)
+		return (random.random() - 0.5) * 2
+		#random.seed(self.freqseed * (1 + x) * self.seed)
+		#return (random.random() - 0.5) * 2
+	
+	def linearInterpolate(self,a, b, x):
+		return  a*(1-x) + b*x
+	
+	def cosineInterpolate(self,a, b, x):
+		ft = x * math.pi
+		f = (1.0 - math.cos(ft)) * .5
+		return  a*(1-f) + b*f
+	
+	def noise2D(self, x, y):
+		total = 0
+		
+		for i in range(0,self.numberOfOctaves - 1):
+			
+			frequency = 2**i
+			self.freqseed = frequency
+			amplitude = self.persistance**i
+			
+			integer_X    = int(x * frequency)
+			fractional_X = (x * frequency) - integer_X
+
+			integer_Y	= int(y * frequency)
+		  	fractional_Y = (y * frequency) - integer_Y
+		  	
+			if self.smooth == True:
+				v1 = self.smoothedNoise2D(integer_X,	 integer_Y)
+				v2 = self.smoothedNoise2D(integer_X + 1, integer_Y)
+				v3 = self.smoothedNoise2D(integer_X,	 integer_Y + 1)
+				v4 = self.smoothedNoise2D(integer_X + 1, integer_Y + 1)
+			else:
+				v1 = self.noiseGen2D(integer_X,	 integer_Y)
+				v2 = self.noiseGen2D(integer_X + 1, integer_Y)
+				v3 = self.noiseGen2D(integer_X,	 integer_Y + 1)
+				v4 = self.noiseGen2D(integer_X + 1, integer_Y + 1)
+			
+			i1 = self.cosineInterpolate(v1 , v2 , fractional_X)
+			i2 = self.cosineInterpolate(v3 , v4 , fractional_X)
+			
+			total = total + self.cosineInterpolate(i1 , i2 , fractional_Y) * amplitude
+			
+		return total
+	
+	def smoothedNoise2D(self, x, y):
+		corners = ( self.noiseGen2D(x-1, y-1) + self.noiseGen2D(x+1, y-1) + self.noiseGen2D(x-1, y+1) + self.noiseGen2D(x+1, y+1) ) / 16
+		sides   = ( self.noiseGen2D(x-1, y  ) + self.noiseGen2D(x+1, y  ) + self.noiseGen2D(x  , y-1) + self.noiseGen2D(x  , y+1) ) / 8
+		center  =  self.noiseGen2D(x, y) / 4
+		
+		return corners + sides + center
+
+	
+	def noiseGen2D(self, x, y):
+		n = x + y * 57
+		n = (n * 2**13) ^ n
+		return 1.0 - ( (n * (n * n * 15731 + 789221) + 1376312589) & 0x7fffffff) / 1073741824.0;	
+		#random.seed(self.freqseed * (1 + x**2) * (1 + y/2) * self.seed)
+		#return (random.random() - 0.5) * 2
+	
+	def noise3D(self, x, y):
+		total = 0
+		
+		for i in range(0,self.numberOfOctaves - 1):
+			
+			frequency = 2**i
+			self.freqseed = frequency
+			amplitude = self.persistance**i
+			
+			integer_X    = int(x * frequency)
+			fractional_X = (x * frequency) - integer_X
+
+			integer_Y	= int(y * frequency)
+		  	fractional_Y = (y * frequency) - integer_Y
+		  	
+			if self.smooth == True:
+				v1 = self.smoothedNoise2D(integer_X,	 integer_Y)
+				v2 = self.smoothedNoise2D(integer_X + 1, integer_Y)
+				v3 = self.smoothedNoise2D(integer_X,	 integer_Y + 1)
+				v4 = self.smoothedNoise2D(integer_X + 1, integer_Y + 1)
+			else:
+				v1 = self.noiseGen2D(integer_X,	 integer_Y)
+				v2 = self.noiseGen2D(integer_X + 1, integer_Y)
+				v3 = self.noiseGen2D(integer_X,	 integer_Y + 1)
+				v4 = self.noiseGen2D(integer_X + 1, integer_Y + 1)
+			
+			i1 = self.cosineInterpolate(v1 , v2 , fractional_X)
+			i2 = self.cosineInterpolate(v3 , v4 , fractional_X)
+			
+			total = total + self.cosineInterpolate(i1 , i2 , fractional_Y) * amplitude
+			
+		return total
+	
+	def smoothedNoise3D(self, x, y):
+		corners = ( self.noiseGen2D(x-1, y-1) + self.noiseGen2D(x+1, y-1) + self.noiseGen2D(x-1, y+1) + self.noiseGen2D(x+1, y+1) ) / 16
+		sides   = ( self.noiseGen2D(x-1, y  ) + self.noiseGen2D(x+1, y  ) + self.noiseGen2D(x  , y-1) + self.noiseGen2D(x  , y+1) ) / 8
+		center  =  self.noiseGen2D(x, y) / 4
+		
+		return corners + sides + center
+
+	
+	def noiseGen3D(self, x, y):
+		n = x + y * 57
+		n = (n * 2**13) ^ n
+		return 1.0 - ( (n * (n * n * 15731 + 789221) + 1376312589) & 0x7fffffff) / 1073741824.0;	
+		#random.seed(self.freqseed * (1 + x**2) * (1 + y/2) * self.seed)
+		#return (random.random() - 0.5) * 2
+	
+
+

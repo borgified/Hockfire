@@ -1,0 +1,4 @@
+    * the core will have the extension .qc (quantus core) and will just be a renamed zip file
+    * inside each core file there will be a series of xml documents containing all of the data
+
+More detailed note to come

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globals>
+         <general>
+                  <corename>Default Cores</corename>
+                  <version>0.1</version>         
+                  <author>Dare</author>                  
+         </general>
+         <globalsettings>         
+                  <LensMultiplier>0.2</LensMultiplier>
+                  <MapRadius>3000</MapRadius>
+                  <OutOfBounds>7</OutOfBounds>
+                  <ExitWarpSpeed>15</ExitWarpSpeed>
+                  <ExitStationSpeed>50</ExitStationSpeed>
+                  <DownedShield>0.1</DownedShield>
+                  <SecondsBetweenPaydays>60</SecondsBetweenPaydays>
+                  <CapacityHe3>90</CapacityHe3>
+                  <ValueHe3>80</ValueHe3>
+                  <AmountHe3>1500</AmountHe3>
+                  <MountTime>2</MountTime>
+                  <StartingMoney>16000</StartingMoney>
+                  <RipcordTime>10</RipcordTime>
+                  <He3Regeneration>2.5</He3Regeneration>
+                  <Income>600</Income>
+                  <LifepodEndurance>300</LifepodEndurance>
+                  <WarpBombDelay>15</WarpBombDelay>               
+         </globalsettings>
+</globals>

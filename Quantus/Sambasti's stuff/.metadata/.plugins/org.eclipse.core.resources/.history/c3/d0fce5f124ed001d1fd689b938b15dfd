@@ -1,0 +1,6 @@
+import direct.directbase.DirectStart
+import PerlinTest
+
+pTest = PerlinTest.PerlinTest
+pTest.__init__()
+run()

@@ -1,0 +1,5 @@
+Thanks to Hypnos of the Panda3d forums for the procedural forest code.
+
+You need panda3d to run this. (google it) just do python main.py
+
+if its not working, i probably broke it at some point.

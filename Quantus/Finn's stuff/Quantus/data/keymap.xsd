@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.quantusgame.org"
+xmlns="http://www.quantusgame.org"
+elementFormDefault="qualified">
+	
+	<xs:element name="keymap" type="Root"/>
+	
+	
+	<xs:complexType name="Root">
+		<xs:sequence>
+			<xs:element name="branch" type="BranchType"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="BranchType">
+		<xs:sequence>
+			<xs:element name="mapping" type="MappingType"
+					minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="branch" type="BranchType"
+					minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="MappingType">
+		<xs:sequence>
+			<xs:element name="input" type="InputType"/>
+			<xs:element name="control" type="ControlType"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:simpleType name="InputType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value=
+			"(shift-)?(ctrl-)?(alt-)?([^A-Z]|[a-z][a-z0-9_]{0,15})(-up|-repeat)?"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="ControlType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-z0-9_]{0,20}(-off|-on)?"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>

@@ -1,0 +1,62 @@
+*This is the official lounge file, since the recent events doesn't just show lounge comments.*
+
+Sambasti:  	Finn, could you explain a little bit about how you structured the main.py (Which file is controls, and what makes what)  Thanks.
+			Dont make it long, I just want to know whats where so I can mess with it.
+			I managed to fix the heightfield2.
+			Uncommented : self.mHeightFieldNode.setPos( MAPSIZE/2, MAPSIZE/2, 0 )
+			
+			
+Finn:		As previously stated, i didnt make all this code, its mostly an example given on the panda forums,
+			im just using it as a base to test with until I have enough of my own code
+			That said, i think im starting to get how it works.
+			The original programmer seems to have made a neat main.py... then they fucked it up 
+			by putting a load of code that should have had its own file in there. 
+			The the_days_after class is the one that starts the program note that it inherits from DirectObject
+			The step method inside it is what runs every frame.
+			nice one fixing the heightfield2 file, ill try it out next time im on my pc
+
+Fuzz:	We should get some flowcharts of what we've got so far.
+
+Hock: Hey, could anyone replace the foliage in the procedural forest, by the models I have converted to .egg in Hocks stuff\Models\EGG format\Testing? I want to check if the x2egg converter is correctly reading everything and displays correctly the materials/transparency. Plus, how cool is a forest made of land mines?
+Finn:	Sorry for dealing with this so slowly hock, didnt want to touch Test until i'd worked out what i was doing in the Quantus folder. ive imported all the changes from quantus to test so you guys can see, notice the sunsets :), tried it and mines worked, ill keep the mine version up for a while, but it eats the fps too much. oh and GIANT PINK MINES!!!!!
+
+Hock: I only got one more question about that finn; did the pink ones show any transparency, and was there any depth-related alpha issues or did it go seamless? The mine2.egg file had the pink/transparent material. On another note, I finally ended the clean-up on IC's (sexy) weapons (and i "upgraded" dare's ICAssRifle) and next thing i'm gonna do it perhaps animate the guns (tripods, gattlings, recoils, etc.). 
+MS3D looks like a fine format to do this, only thing it does not support is blend/Morph targets, but I ain't gonna need that on guns (and since I can do the same with joints, I probably ain't gonna use them ever).
+
+I have more questions. How do you think you are goint to sync 2 or more different objects (say, a magazine, a gun and the player's hand?).
+
+More info: Collision meshes can be made easily in Wings3D, they don't even need to be triangulated, so that's the easy (boring) part I'll leave to the end. Unless, of course, you require some for testing, in that case I'll be glad to push those forward.
+
+Finn: this slipped passed me, sorry. the mines were transparent, but there were some serious depth related issues unfortunatly, i think it would be best to just avoid transparancy altogether. 
+Before you do too much work on joints, make sure they can import correctly, id be happy to test for you when you put a test up.
+collision meshes, im good for now, still doing the "environment"
+im working on a map editor right now, as that lets me get everything working together without it being such a huge project, plus you guys will be able to make some maps/test the codebase.
+
+Sambasti:	Where can I find the controls?  And how does the importing of modules work?  <--Learned a bit of Basic at an earlier time, and is now confused.
+
+Finn: 		controls? you mean the keyboard commands? wasd<space> and the F# keys (dont remember whuich, just click them all and see what happens, 1 locks the game up for a few seconds, but you shouldnt have to worry about it. also, mouse for direction. (left click picks up the multi-coloured box, but that may be disabled)
+
+importing is just: import <blah>
+or: from <blah> import <blah>,<blah>,...
+
+Sambasti: Actually, I meant where can I find the controls in the code, how does python recognize models.
+finn:	ah, sorry, you mean the command and functions to make panda3d do stuff?
+
+http://panda3d.org/apiref.php?page=classes for a list of them, click manual if you want it explain in an easier to read way.
+as for models, 
+blah = loader.loadModel("filepath/filename.fileExtension")
+blah.reparentTo(render)
+
+will make the model appear in posision 0,0,0
+
+blah.setPos(num1,num2,num3)
+
+will move it to a new position (you migh need this if your using one of the apps with terrain, since you want be able to see 0,0,0
+
+make sure you have import direct.directbase.DirectStart at the top
+
+if you want other commands see the link above (hint, "blah" would be a NodePath).
+
+Sambasti: 	And, here I go again.  What are the compatible extensions for models in Panda?  And with controls I meant what section of the code determines that the camera will be moved with wasd.  I want to know so I can analize it and possibly try to improt a movable tank.
+
+Hockfire: Panda will only read the .egg, .x , and .bam format, though the .egg format is what you'd be aiming for. Go to the console, cd to where your model is (you must have exported it to .x format) and then type "x2egg input.x output.egg". You can check animations on a model by typing "pview model.x" or "pview model.egg". To export X files from wings you must have first to uncheck "Export Uv coordinates" on the export dialog for DirectX, or else the file won't work. I got a collection of articles specific to 3D models on Panda in my folder, you might want to check that out.

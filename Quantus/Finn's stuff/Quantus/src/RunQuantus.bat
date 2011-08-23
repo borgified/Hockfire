@@ -1,0 +1,2 @@
+ppython quantus.py
+pause

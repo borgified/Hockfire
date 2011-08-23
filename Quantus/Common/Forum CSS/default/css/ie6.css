@@ -1,0 +1,22 @@
+/* special styles for IE6 */
+* html #poll_options ul.horizlist dl.options dd, * html #poll_options ul.horizlist dl.options dt
+{
+	margin: 0;
+	padding: 0;
+}
+
+.modbuttons .buttonlist_bottom ul, .modbuttons .buttonlist ul, .floatright .buttonlist ul, .floatright .buttonlist_bottom ul, .readbuttons .buttonlist ul, .readbuttons .buttonlist_bottom ul
+{
+	float: right;
+}
+
+.postarea .post
+{
+	clear: none;
+}
+
+/* Profile template */
+#detailedinfo div.content dl
+{
+	height: 0.1%;
+}

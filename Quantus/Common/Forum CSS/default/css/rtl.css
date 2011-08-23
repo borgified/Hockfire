@@ -1,0 +1,23 @@
+/* Unfortunately, support for RTL languages isn't ideal yet. We're working on it, though! */ 
+ 
+.maintab_first
+{
+	background: url(../images/maintab_last_prev.gif) left bottom no-repeat;
+}
+
+.maintab_last
+{
+	background: url(../images/maintab_first_prev.gif) left bottom no-repeat;
+}
+
+.maintab_active_first
+{
+	background: url(../images/maintab_active_last.gif) left bottom no-repeat;
+	width: 8px;
+}
+
+.maintab_active_last
+{
+	background: url(../images/maintab_active_first.gif) left bottom no-repeat;
+	width: 6px;
+}

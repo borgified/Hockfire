@@ -1,0 +1,16 @@
+Make sure you have Panda3D, Dropbox and Python for Windows installed before trying to run Test.bat.
+
+--
+
+Directions:
+Open Test.bat in Notepad on any other simple text editor.
+Change 'personal_path' with the path that leads from your hard drive (C:\) to your dropbox folder.
+Close your text editor, and start Test.bat.
+
+--
+
+Notes:
+You might need to install python; and you may have to change 'ppython' to 'python' 
+This file (Test.bat) doesn't need to be placed in any specific folder.
+This may actually not work in earlier stages as file paths may be specific to one developer and not
+dinamic (adaptable to any sistem). Don't forget to fix this!

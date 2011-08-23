@@ -1,0 +1,5 @@
+/* special styles for IE7 */
+.postarea .post
+{
+	clear: none;
+}

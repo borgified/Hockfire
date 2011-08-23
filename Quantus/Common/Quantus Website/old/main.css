@@ -1,0 +1,311 @@
+/* IE6/7/8 - Must be first */  
+@font-face 
+{  
+	font-family: bn3rdplace ;  
+	src: url( fonts/bn-3rd-place.eot );  
+} 
+ 
+/* FFx3.5/Safari/Op10 - Next */  
+@font-face 
+{  
+	font-family: bn3rdplace ;  
+	src: url( fonts/bn-3rd-place.ttf ) format("truetype");  
+}  
+ 
+
+ 
+
+/*The following are general defaults for the site*/
+div
+{
+	padding:0px;
+	border-style:none;
+	border-width:0px;
+}
+img
+{
+	border-style:none;
+}
+
+
+
+/*Start with the top level tags and work through each branch of the tree in turn*/
+body
+{
+	background-image:url('images/background.png');
+	color:#BFB8B3;
+}
+div#page-container
+{
+	padding-left:30px;
+	padding-right:30px;
+	min-width:600px;
+	max-width:1024px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+}
+
+
+
+
+
+
+/*The following define the left-hand menu's style*/
+div#left
+{
+	float:left;
+	width:135px;
+}
+div#left-top
+{
+	background-image:url('images/non-repeat.png');
+	background-position:-192px -69px;
+	width:135px;
+	height:130px;
+}
+div#left-menu
+{
+	text-align:center;
+	background-image:url('images/verticals.png');
+	background-position:-0px -0px;
+	background-repeat:repeat-y;
+}
+div#menu
+{
+	padding:15px;
+	text-align:center;
+	
+	background-image:url('images/menu-back.png');
+	background-repeat:repeat;
+	margin-left:17px;
+	padding-right:38px;
+}
+div#left-menu-bottom
+{
+	background-image:url('images/non-repeat.png');
+	background-position:-1px -69px;
+	width:135px;
+	height:101px;
+}
+/*The following define the central area's style*/
+div#center
+{
+	margin-left:135px;
+}
+/*The following define the header's style*/
+div#head
+{
+	padding-top:17px;
+	height:50px;
+	width:337px;
+	margin-left:-23px;
+	background-image:url('images/non-repeat.png');
+	background-position:-1px -1px;
+}
+img#header-image
+{
+	/*display: block;*/
+	margin-left:-17px;
+}
+div#center-middle
+{
+}
+div#center-middle-top-left
+{
+	float:left;
+	background-image:url('images/non-repeat.png');
+	background-position:-305px -136px;
+	margin-left:-22px;
+	width:34px;
+	height:27px;
+}
+div#center-middle-top-center
+{
+	background-image:url('images/horizontals.png');
+	background-position:-0px -27px;
+	background-repeat:repeat-x;
+	margin-left:12px;
+	margin-right:36px;
+	height:27px;
+}
+div#center-middle-top-right
+{
+	float:right;
+	background-image:url('images/non-repeat.png');
+	background-position:-155px -171px;
+	height:27px;
+	width:36px;
+}
+div#center-middle-center-left
+{
+	background-image:url('images/verticals.png');
+	background-position:-17px 0px;
+	background-repeat:repeat-y;
+	margin-left:-23px;
+	padding-left:23px;
+	
+}
+div#center-middle-center-right
+{
+	background-image:url('images/content-right.png');
+	background-repeat:repeat-y;
+	background-position:right;
+}
+/*The following define the main content area's style*/
+div#center-middle-center
+{
+	/*This is the 12px taken up by the border,
+	plus the real margin (10px)*/
+	margin-left:12px;
+	margin-right:36px;
+	min-height:420px;
+	background-image:url('images/content-back.png');
+	background-repeat:repeat;
+}
+
+div#content
+{
+	padding-left:15px;
+	padding-right:15px;
+	overflow:auto;
+}
+div#center-middle-bottom-left
+{
+	float:left;
+	margin-left:-23px;
+	background-image:url('images/non-repeat.png');
+	background-position:-120px -198px;
+	width:35px;
+	height:27px;
+}
+div#center-middle-bottom-center
+{
+	background-image:url('images/horizontals.png');
+	background-position:0px 0px;
+	background-repeat:repeat-x;
+	margin-left:12px;
+	margin-right:36px;
+	height:27px;
+}
+div#center-middle-bottom-right
+{
+	float:right;
+	background-image:url('images/non-repeat.png');
+	background-position:-155px -198px;
+	height:27px;
+	width:36px;
+}
+div#end
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:250px;
+}
+div#end-left
+{
+	float:left;
+	background-image:url('images/non-repeat.png');
+	background-position:-12px -193px;
+	width:93px;
+	height:14px;
+}
+div#end-right
+{
+	float:right;
+	background-image:url('images/non-repeat.png');
+	background-position:-12px -193px;
+	width:93px;
+	height:14px;
+}
+/*The following define the footer's style*/
+div#foot
+{
+	border-color:#93725C;
+	border-left-style:solid;
+	border-right-style:solid;
+	border-left-width:1px;
+	border-right-width:1px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	padding:5px;
+	width:60%;
+	background-image:url('images/content-back.png');
+	background-position:0px -5px;
+	background-repeat:repeat;
+	text-align:center;
+}
+
+
+
+/*These are general classes for modifying the look and feel of the content*/
+
+div.menu-item
+{
+	font-family: bn3rdplace , sans-serif;
+	margin-left:-12px;
+	background-image:url('images/non-repeat.png');
+	background-position:-1px -227px;
+	width:97px;
+	height:26px;
+}
+div.menu-item p
+{
+	margin-left:8px;
+	margin-top:5px;
+}
+div.menu-item p a
+{
+	width:97px;
+	height:26px;
+	color:#BFB8B3;
+	text-decoration:None;
+}
+div.menu-item:hover
+{
+	background-image:url('images/non-repeat.png');
+	background-position:-99px -227px;
+}
+div.selected
+{
+	background-image:url('images/non-repeat.png');
+	background-position:-197px -227px;
+}
+div.selected:hover
+{
+	background-image:url('images/non-repeat.png');
+	background-position:-197px -200px;
+}
+/*Used for clearing the end of floating elements*/
+div.layout
+{
+	clear:both;
+}
+
+/*Ensures images fit inline with text well*/
+img.in-text
+{
+	display:inline;
+	padding:0;
+	margin:0;
+}
+
+.hidden
+{
+	display:none;
+}
+/*These are to modify text, they are probably inside p elements, but not always*/
+.text-center
+{
+	text-align:center;
+}
+.text-right
+{
+	text-align:right;
+}
+.text-big
+{
+	font-size:large;
+	font-weight:bold;
+}

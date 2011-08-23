@@ -1,0 +1,25 @@
+11th August 2009 11:41-11:51
+
+<scratchee> oo, one thing i need to ask you before i forget, where did you get that glass font?
+<TheSambasti> `4
+<TheSambasti> need some help writing the texts?
+<Hocfire> Let me see
+<scratchee> "GlassGauge"
+<scratchee> i managed to track down bn-3rd-place
+<scratchee> and it was free, so no problem there
+<Hocfire> ah, you mean the license
+<scratchee> yeah
+<Hocfire> sure, let me dug it up
+<scratchee> @sambasti: yes! i suck at writing!
+<scratchee> cool, thanks
+<scratchee> lucida console wont matter too much, its generic enough and common enough that we can use a system font
+<Hocfire> well, glassgauge comes in a .zip with no license at all
+<Hocfire> let me see if i cand find something more
+<scratchee> if you cant find anything (i couldnt) then im claiming its existance is an act of god and is therefore in the public domain
+<Hocfire> downloaded it from 5-6 different sites, .zip file is always the same and with the font only as always
+<scratchee> ok, its public domain, we did our best to check, that will do
+<Hocfire> therefore, i think it's safe to use
+<Hocfire> yeah.
+<scratchee> yeah
+<scratchee> :)
+<TheSambasti> keep these logs on record

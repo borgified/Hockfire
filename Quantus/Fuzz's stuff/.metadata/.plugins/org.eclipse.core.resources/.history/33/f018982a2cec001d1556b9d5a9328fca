@@ -1,0 +1,115 @@
+import math, sys
+
+from direct.showbase.DirectObject import DirectObject
+from direct.gui.OnscreenText import OnscreenText
+from pandac.PandaModules import TextNode, WindowProperties
+from direct.task import Task
+
+RESOLUTION = [800, 600]
+
+USESOUND = True
+USESHOWPOS = False
+
+class cameraAddonsClass( DirectObject ):
+  def __init__( self ):
+    # setup key bindings
+    keybindings = { "escape"    : [sys.exit, None]
+                  , "f2"        : [self.printPos, None]
+                  , "f3"        : [self.toggleWireframe, None] 
+                  , "f6"        : [render.analyze, None]
+                  , "f9"        : [base.oobe, None] }
+    
+    # set keyboard mappings
+    for mapping, [binding, setting] in keybindings.items():
+      if setting is not None:
+        self.accept( mapping, binding, [setting] )
+      else:
+        self.accept( mapping, binding )
+    
+    if USESHOWPOS:
+      self.guiposOnscreenText = OnscreenText(text = 'position', fg=(1,1,1,1), pos = (-0.9, 0.9), scale = 0.07, mayChange=True, align=TextNode.ALeft )
+      taskMgr.doMethodLater(0.1, self.updateGuiposTask, 'updateGuiposTask')
+    
+    if USESOUND:
+      self.walkSound = loader.loadSfx("data/sounds/walking.mp3")
+      self.walkSound.setLoop(True)
+      self.oldPos = None
+      self.soundOn = False
+      taskMgr.add(self.playSound, 'playSoundTask')
+    
+    if True:
+      wp = WindowProperties()
+      # set resolution
+      wp.setSize(RESOLUTION[0], RESOLUTION[1])
+      # set fullscreen
+      base.win.requestProperties(wp)
+      # set background color to black
+      base.setBackgroundColor( 0,0,0 )
+      # set camera field of view
+      base.camLens.setFov(90)
+      # set near and far clipping planes
+      base.camLens.setNear( 0.1 )
+      base.camLens.setFar( 5000 )
+  
+  def updateGuiposTask( self, task ):
+    text = "%s:%s" % (str(base.camera.getPos( render )), str(base.camera.getHpr( render )))
+    self.guiposOnscreenText.setText( text )
+    return Task.cont
+  
+  def setToggleVerbose( self ):
+    messenger.toggleVerbose()
+  
+  def playSound( self, task ):
+    cameraPos = base.camera.getPos()
+    if self.oldPos != cameraPos:
+      soundOn = True
+    else:
+      soundOn = False
+    self.oldPos = cameraPos
+    self.walkSound.play()
+    if soundOn == True:#self.soundOn == :
+      self.walkSound.stop()
+    else:
+      self.walkSound.stop()
+  
+  def toggleWireframe( self ):
+    # toggle complete scene wireframe visualisation
+    if render.getRenderMode() != 2: # 2 = wireframe render mode
+      render.setRenderModeWireframe()
+    else:
+      render.setRenderModeFilled()
+  
+  def printPos( self ):
+    cameraPos = base.camera.getPos( render )
+    print "current camera position is %s" % str(cameraPos)
+    cameraHpr = base.camera.getHpr( render )
+    print "current camera rotation is %s" % str(cameraHpr)
+
+  def map3dToAspect2d(self, node, point): #got this from the Panda3d forum. here it converts between objects on the screen and their 3D location for comparasion.
+    # not in use currently
+    """Maps the indicated 3-d point (a Point3), which is relative to 
+    the indicated NodePath, to the corresponding point in the aspect2d 
+    scene graph. Returns the corresponding Point3 in aspect2d. 
+    Returns None if the point is not onscreen. """ 
+
+    # Convert the point to the 3-d space of the camera 
+    p3 = base.cam.getRelativePoint(node, point) 
+
+    # Convert it through the lens to render2d coordinates 
+    p2 = Point2() 
+    if not base.camLens.project(p3, p2): 
+        return None 
+
+    r2d = Point3(p2[0], 0, p2[1]) 
+
+    # And then convert it to aspect2d coordinates 
+    a2d = aspect2d.getRelativePoint(render2d, r2d) 
+
+    return a2d
+
+
+
+
+
+
+

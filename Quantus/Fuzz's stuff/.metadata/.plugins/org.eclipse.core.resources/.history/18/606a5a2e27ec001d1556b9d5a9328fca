@@ -1,0 +1,97 @@
+from pandac.PandaModules import HeightfieldTesselator, Texture, Filename, TextureStage, TexGenAttrib
+from direct.task.Task import Task
+import Perlin
+from pandac.PandaModules import PNMImage
+
+MAPSIZE = 5000
+
+class heightfieldClass:
+	def __init__( self, cameraPos ):
+		self.cameraPos = cameraPos
+		self.setupHeightfield()
+		taskMgr.doMethodLater(5.0, self.mapUpdateTask, 'UpdateLOD')
+
+	def mapUpdateTask( self, task ):
+		self.updateHeightField()
+		return Task.again
+
+	def setupHeightfield( self ):
+		# Prep terrain textures
+		#coverTextureFile = "data/textures/ground/green.jpg"
+		#self.mCoverTexture = loader.loadTexture(coverTextureFile)
+		
+		# Setup heightfield
+		self.mHeightFieldTesselator = HeightfieldTesselator("Heightfield")
+		#fName = "data/textures/ground/heightfield.png"
+		self.mHeightFieldTesselator.setPolyCount(10)
+		#fileObj = Filename(fName)
+		self.mTerrainVScale = self.mTerrainUScale = 1.0/1024.0
+			
+		myImage=PNMImage(128,128)
+		myImage.makeGrayscale()
+	
+		p = Perlin.Perlin(numberOfOctaves = 10, persistance = 0.5, smooth = False)
+		for y in range(0,128):
+			for x in range(0,128):
+				i = p.noise2D(float(x)/128.0,float(y)/128.0)
+				myImage.setGray(x, y, i + 0.5)
+	
+		bigImage=PNMImage(1024, 1024)
+		bigImage.gaussianFilterFrom(1.0, myImage)
+		fileObj = Filename("data/textures/ground/myHeightfield.png")
+		bigImage.write(fileObj)
+		#myTexture = Texture()
+		#myTexture.load(bigImage)
+		
+
+		
+		self.mHeightFieldTesselator.setHeightfield(fileObj)
+		self.mTerrainHeight = MAPSIZE/10
+		self.mHeightFieldTesselator.setVerticalScale(self.mTerrainHeight)
+		self.mHorizontalScale = MAPSIZE/1024.0
+		self.mHeightFieldTesselator.setHorizontalScale(self.mHorizontalScale)
+		self.mHeightFieldNode = None
+
+#		self.tex0 = loader.loadTexture( 'models/textures/ground/schachbrett.png' )
+		self.tex0 = loader.loadTexture( 'data/textures/ground/mud-tile.png' )
+		#self.tex1 = loader.loadTexture( 'data/models/textures/ground/green.jpg' )
+		#self.tex2 = loader.loadTexture( 'data/models/textures/ground/grey-green-leaves.jpg' )
+
+		#self.ts0 = TextureStage( 'dirt' )
+		#self.ts1 = TextureStage( 'fungus' )
+		#self.ts2 = TextureStage( 'grass' )
+		
+		self.updateHeightField()
+	
+	def updateHeightField( self ):
+		''' recalculate heightfield
+		'''
+		if self.mHeightFieldNode != None:
+			self.mHeightFieldNode.removeNode()
+		posX, posY = self.world2MapPos( ( self.cameraPos.getX()
+																		, self.cameraPos.getY() ) )
+		self.mHeightFieldTesselator.setFocalPoint( posX, posY )
+		self.mHeightFieldNode = self.mHeightFieldTesselator.generate()
+		self.mHeightFieldNode.setPos( MAPSIZE/2, MAPSIZE/2, 0 )
+		self.mHeightFieldNode.setHpr( 270, 0, 0 )
+		self.mHeightFieldNode.reparentTo(render) 
+		
+		self.mHeightFieldNode.setTexGen( TextureStage.getDefault(), TexGenAttrib.MWorldPosition )
+		scale = 1.0/8.0
+		self.mHeightFieldNode.setTexScale( TextureStage.getDefault(), scale, scale );
+		
+		self.mHeightFieldNode.setTexture( self.tex0, 1 )
+		
+	def world2MapPos( self, in_pos ):
+		posY = (MAPSIZE-MAPSIZE/2-in_pos[0]) / self.mHorizontalScale
+		posX = (MAPSIZE/2-in_pos[1]) / self.mHorizontalScale
+		return (posX, posY)
+
+	def get_elevation( self, in_pos ):
+		''' returns the elevation of the heightField at a specific 3d location
+		it is not 100% correct...
+		'''
+		posX = (MAPSIZE/2-in_pos[0]) / self.mHorizontalScale
+		posY = (MAPSIZE/2-in_pos[1]) / self.mHorizontalScale
+		return (self.mHeightFieldTesselator.getElevation(	posY, posX ) * self.mTerrainHeight)
+		

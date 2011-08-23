@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<keymap
+xmlns="http://www.quantusgame.org"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="keymap.xsd">
+	
+	<branch name="General Controls">
+		<mapping>
+			<input>ctrl-alt-a-up</input>
+			<control>move_left</control>
+		</mapping>
+		<branch name="Unit Controls">
+			<branch name="Infantry Controls"/>
+			<branch name="Vehicle Controls"/>
+		</branch>
+		<branch name="Map Controls"/>
+	</branch>
+	
+</keymap>

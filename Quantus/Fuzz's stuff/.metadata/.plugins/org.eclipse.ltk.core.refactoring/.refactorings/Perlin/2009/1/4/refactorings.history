@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Perlin/src/grassPack.png&apos; to &apos;myImage.png&apos;" description="Rename resource &apos;grassPack.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/grassPack.png" name="myImage.png" stamp="1232828571722" updateReferences="true"/>
+</session>

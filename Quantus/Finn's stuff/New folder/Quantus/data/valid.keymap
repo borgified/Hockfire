@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+
+<keymap
+xmlns="http://www.quantusgame.org"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="keymap.xsd">
+	<branch name="General Controls">
+		<mapping>
+			<input>w</input>
+			<control>move_forward</control>
+		</mapping>
+		<mapping>
+			<input>s</input>
+			<control>move_backward</control>
+		</mapping>
+		<mapping>
+			<input>a</input>
+			<control>move_left</control>
+		</mapping>
+		<mapping>
+			<input>d</input>
+			<control>move_right</control>
+		</mapping>
+
+		
+		<branch name="Unit Controls">
+			<mapping>
+				<input>mouse1</input>
+				<control></control>
+			</mapping>
+			<mapping>
+				<input>mouse3</input>
+				<control></control>
+			</mapping>
+			
+			<branch name="Infantry Controls">
+				
+			</branch>
+			<branch name="Vehicle Controls">
+				<branch name="Aircraft Controls">
+					<mapping>
+						<input>r</input>
+						<control>move_up</control>
+					</mapping>
+					<mapping>
+						<input>f</input>
+						<control>move_down</control>
+					</mapping>
+					<mapping>
+						<input>f</input>
+						<control>move_down</control>
+					</mapping>
+				</branch>
+				<branch name="Ground Controls">
+					
+				</branch>
+			</branch>
+		</branch>
+		<branch name="Map Controls">
+			
+		</branch>
+	</branch>
+</keymap>

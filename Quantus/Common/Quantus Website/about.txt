@@ -1,0 +1,29 @@
+<html>
+
+<head>
+<title>About Us</title>
+</head>
+
+<body>
+<p>
+<h2>About Us</h2> 
+The Quantus team is a dedicated group of players from a game called Allegiance, an online space RTS/FPS.  Until recently, we were based on the official Allegiance site, but we have created our own website in order to continue development.
+The team working on Quantus has changed many times in the two years the project has been running.</p>  
+<p>
+The current team:
+<h3>Full Time Devs</h3>
+Finn Bryant - Dev Team Leader and Head Coder (codes and tells other people what to do)<br>
+TheSambasti - Organizer; Gameplay Chief; Amateur Coder (organizes things [kinda like a CEO]; controls gameplay decisions; tries not to bug people while being incapable at working on the code)<br>
+Fuzz - Code, Concept, and Spell checker (finds code errors, tells which ideas suck or dont work, and checks spelling in my posts)<br>
+Hockfire - Modeler; GUI and Website designer (makes models for Quantus and works on graphics)<br>
+</p>
+<p>
+<h3>Part-Time/MIA/AWOL Devs</h3> 
+Dare - Core System Creator; Modeler (Working on creating a system for the cores of Quantus; makes models for Quantus)<br>
+Cookie Monster - Cookie eater; Concept and Story Line; Forum Mod (eats cookies while figuring out things about gameplay and writing the Story Line; Deletes all the stupid thing I write)<br>
+
+</p>
+
+</body>
+
+</html>

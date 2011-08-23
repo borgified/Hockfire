@@ -1,0 +1,120 @@
+from pandac.PandaModules import WindowProperties, CardMaker, TransparencyAttrib, NodePath
+from direct.showbase.DirectObject import DirectObject
+from direct.task import Task
+
+# rotation speed of the camera
+ROTATIONSPEED = 400.0
+
+# limit the angle the camera can loop up & down
+UPCAMERALIMIT = 90
+DOWNCAMERALIMIT = -90
+
+# the cross which is shown in the screen while the mouse is disabled
+CROSSTEXTURE = 'src/camera/cross.png'
+AIMCROSSWIDTH  = 0.04
+AIMCROSSHEIGHT = 0.05
+
+class cameraRotationClass( DirectObject ):
+  enabled = False
+  def __init__( self ):
+    # disable the default camera control
+    base.disableMouse()
+    
+    # create the aiming cross
+    cm = CardMaker('aim-cross')
+    cm.setFrame(-AIMCROSSWIDTH,AIMCROSSWIDTH,-AIMCROSSHEIGHT,AIMCROSSHEIGHT)
+    cross = cm.generate()
+    self.aimingCross = NodePath(cross)
+    # set texture to cross
+    tex = loader.loadTexture(CROSSTEXTURE)
+    self.aimingCross.setTexture(tex)
+    # enable transparency on the aiming cross
+    self.aimingCross.setTransparency(TransparencyAttrib.MAlpha)
+    self.aimingCross.detachNode()
+    
+    # enable this class functions
+    self.enable()
+    
+    self.accept( 'space', self.toggle )
+  
+  def toggle( self ):
+    if self.enabled:
+      self.disable()
+    else:
+      self.enable()
+  
+  def enable( self ):
+    ''' enable first person camera rotation by mouse and bind/hide the mouse
+    '''
+    # the mouse is not centered
+    self.mouseCentered = False
+    # enable the mouse rotation task
+    taskMgr.add(self.rotationTask, 'cameraRotationTask')
+    
+    # hide mouse cursor
+    wp = WindowProperties()
+    wp.setCursorHidden(True)
+    # does not exist panda 1.3.2 / but is reqired for osx-mouse movement
+    try: wp.setMouseMode(WindowProperties.MRelative)
+    except: pass
+    base.win.requestProperties(wp)
+    
+    # add the cross to the window
+    self.aimingCross.reparentTo( render2d )
+    
+    self.enabled = True
+  
+  def disable( self ):
+    ''' disable first person camera rotation of mouse and free/show the mouse
+    '''
+    self.rotationSpeed = 0
+    # disable the mouse rotation task
+    taskMgr.remove('cameraRotationTask')
+    
+    # show mouse cursor
+    wp = WindowProperties()
+    wp.setCursorHidden(False)
+    # does not exist panda 1.3.2 / but is reqired for osx-mouse movement
+    try: wp.setMouseMode(WindowProperties.MAbsolute)
+    except: pass
+    base.win.requestProperties(wp)
+    
+    # remove the cross from the window
+    self.aimingCross.detachNode()
+    
+    self.enabled = False
+  
+  def setMouseCentered( self, task=None ):
+    # reset mouse position to the center of the window
+    print base.win.getXSize()/2.0
+    print base.win.getYSize()/2.0
+    base.win.movePointer(0, base.win.getXSize()/2, base.win.getYSize()/2)
+  
+  def rotationTask( self, task ):
+    # if we can find a mouse
+    if base.mouseWatcherNode.hasMouse():
+      # we want to center the mouse on the first frame
+      if not self.mouseCentered:
+        self.setMouseCentered()
+        self.mouseCentered = True
+      else:
+        # get mouse position
+        mpos = base.mouseWatcherNode.getMouse()
+        x, y = mpos.getX(), mpos.getY()
+        print x
+        print y
+        if x!=0 or y!=0:
+          # reset mouse position to the center of the window
+          self.setMouseCentered()
+        # calculate movement force
+        rotationSpeed = ROTATIONSPEED # * globalClock.getDt()
+        # get current rotation
+        currentHpr = base.camera.getHpr()
+        # add up and down limit for camera
+        h = currentHpr.getX() - x * rotationSpeed
+        p = currentHpr.getY() + max( min( rotationSpeed*y, UPCAMERALIMIT), DOWNCAMERALIMIT)
+        # add new rotation (mouse movement) to existing one
+        base.camera.setHpr( render, h, p, 0)
+    else:
+      print "camera.cameraRotation.mouseControlTask no mouse found"
+    return Task.cont
