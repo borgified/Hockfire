@@ -3,16 +3,13 @@
 
 > ### Hello once again. I've left this community long ago, but I kept an entire array of contribution which, unfortunately, didn't make it to the general audience. I don't see a point in letting it die in my hard drive, so I've decided to release my works to the Allegiance community.
 
-The files are compressed using 7zip, which is free.
+Allegiance
+==========
 
 My Allegiance folder is full (even though I lost some minor things) of my contribution to this wonderful community. 
 
-Factions
-========
-
-[ALLEGIANCE.7ZIP.001](http://www.mediafire.com/?togtttobaa0l41l) AND [ALLEGIANCE.7ZIP.002](http://www.mediafire.com/?5hrc1b82we76vz0) *150 MB +129 MB, hosted on Mediafire (good speed but ads)*
-
 Contents and Info
+-----------------
 
 Bio-Lumen (Faction)
 -------------------
@@ -20,14 +17,17 @@ Bio-Lumen (Faction)
 * If you plan on making a new faction, looking at how I organized all the work on this one might be useful for you.
 * Minimap images have an 'm' before 'BL', research icons have an 'i' and loadout icons have an 'l', in file names.
 * Advanced bases have an 'a' (BLsup v BLasup). They share textures, so no performance impact with two models for each base.
+* Bio-Lumen Heat Cells (concept):
+	* Weapon with 0 damage and range, negative projectile direction (the particles are expelled from the rear of the craft), negative signature (cloaks you) and ammo-based. This means that you can mount these and instead of energy they use ammo (when you get out of ammo they are useless). You fire them as you'd do with normal weapons, and they were intended to replace cloak devices.  
+	* The ammo here would be the actual "Heat Cells" being ejected from the craft, therefore reducing it's heat (signature).
+	* You can mount just one Heat Cell (minimum cloak) or you can fill all 4 weapon slots with them (maximum cloak).
 * The Scar (concept):
     * 4 weapons - 3 "slaves" and one "main". The Scar can only take these weapons.
     * The "main" weapon is the one who does the (significant) damage, and requires a massive energy input. The Scar's own energy reserves are not enough. Therefore:
 		* The "slaves" generate a small area damage, but act as energy-positive weapons. They "feed" energy to the ship (negative energy demand). You then need all 3 slaves and the main to be continuously firing the main.
         * The Scar has three arms pointing forward - the slaves fire from each tip, and the main fires between the three (from the actual point equidistant from the three arm tips).
 		* All projectiles have 0 velocity, near zero lifetime and high ROF. What this means is, the particles of each weapon are literally fixed relative to the ship (and their origins).
-		* Result is that you have a little sprite in the middle of the arms that kills anything it touches, eg. bases; but the Scar however needs to... "hug" them. 
-[Picture 1](http://i215.photobucket.com/albums/cc150/Hockfire/2-3.png) and [Picture 2](http://i215.photobucket.com/albums/cc150/Hockfire/1-4.png)
+		* Result is that you have a little sprite in the middle of the arms that kills anything it touches, eg. bases; but the Scar however needs to... "hug" them. The images in the folders might help you visualize it.
 
 Faction X (Partial faction)
 ---------------------------
@@ -50,17 +50,21 @@ Wallpapers
 * Of almost every faction. Includes normal and Widescreen.
 * Sources and Paint.NET layers included.
 
+Images
+----------
+* Old screenshots, signatures, mods, etc. (beware I choose not to rename the images in sake of information and some may have confusing filenames).
+
 
 Quantus
 =======
 
 I've tried to minimally organize the Quantus folder. Since everyone could access it, there should be no problem posting it up here. 
 
-[QUANTUS.7ZIP](http://www.mediafire.com/?6tk5e0b3iyck96i) 54MB
-
 Contents and Info
 ----------------- 
+
 * My 400+ models, concepts, images and user interface, plus some more models. Wings 3D, Paint.NET, Inkscape were my (free) tools.
+* Images of said art (same warning about filenames as the allegiance images folder).
 * Some coding and artwork from Fuzz, sambasti, devil and many others whose names are in the file. These belong to their respective owners.
 * Numerous files of work flow and chatter.
 * Clutter and/or dust particles.
@@ -71,4 +75,6 @@ Contents and Info
 Thanks to all the individuals of this community who make this one of the friendliest (don't deny it) communities out there and thanks to those who plan on using these files for, again, the community.
 
 *[quote name='Hockfire' date='Aug 22 2011, 11:33 AM' post='599468']*
+
 2007-2011
+
